@@ -7,12 +7,17 @@
  * http://gate.ac.uk/gate/licence.html
  *
  * Original code (c) 2010 The University of Sheffield.
+
+Edit the location of gate.home below to the location of GATE on your sytem, usually:
+UNIX: /home/yourusername/GATE-6.0/
+MAC: /Applications/GATE-6.0/
+
  */
 -->
 <project name="gate-webapp" default="compile">
 
   <property file="build.properties" />
-  <property name="gate.home" location="/home/gina/GATE-6.0/" />
+  <property name="gate.home" location="/home/yourusername/GATE-6.0/" />
 
   <target name="init">
     <copy todir="lib">
