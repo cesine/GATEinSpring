@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Example GATE application</title>
+</head>
+<body>
+<h1>GATE tutorial example application</h1>
+<p>Please enter some text to process.  You can use plain text, XML or HTML, if
+you specify the appropriate mime type.</p>
+<form action="process" method="POST">
+<textarea name="text" id="text" cols="60" rows="20">
+This is some example text.
+</textarea>
+<p>Mime type <input type="text" name="mime" id="mime"></input> (optional, GATE
+will guess if omitted)</p>
+<p>Delay in seconds
+<input type="text" name="delay" id="delay" value="5"></input> (to simulate a
+long-running application)</p>
+<p><input type="submit"></input></p>
+</form>
+</body>

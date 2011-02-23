@@ -1,0 +1,135 @@
+LEHRVERANSTALTUNGEN SS 2003
+
+RINGVORLESUNG: ÖKONOMIE ALS PRINZIP IN DER SPRACHE.
+POSTULATE, PROBLEME UND LÖSUNGSANSÄTZE
+
+20. Juni 2003
+
+Wolfgang Hock
+
+Zur Rekonstruktion der urindogermanischen Tektale
+
+Fr. 16 - 18 Uhr, Potsdam Golm, Haus 24, Raum 154
+(Weitere Sprecher und Termine werden noch bekanntgegeben.)
+
+SEMINAR: STRUKTUREN DER SPRACHKENNTNIS III: SYNTAX
+(G. FANSELOW)
+Theorie und Empirie in der Syntaxforschung. Das Seminar beschäftigt sich mit den empirischen
+Grundlagen der Syntaxforschung (Akzeptabilitätsbewertungen), und den Methoden der
+Datengewinnung (Korpora, Informantenbefragung). Es versucht ein Einschätzung, wie gut die
+jeweiligen theoretischen Modelle mit der "empirischen Realität" kompatibel sind. Wir beginnen mit einer
+kurzen Einführung in syntaktische Modellbildung, und zwar insbesondere in Bereichen wie
+Wortstellung. Daran schliesst sich ein empirischen Teil an, dessen Resultat im dritten, wieder
+theoretischen Teil, aufgenommen werden sollen.
+Ausführliches Seminarprogramm zum Download (pdf-Dokument)
+Seminarmaterial zum Download (Powerpoint-Dokument)
+Fr. 10 - 12.30 Uhr, Potsdam Golm, Haus 24, Raum 154
+Beginn: 25. April 2003
+Achtung: am 2. Mai findet das Seminar nicht statt!
+
+SEMINAR: STRUKTUREN DER SPRACHKENNTNIS IV: SEMANTIK
+(P. STATEVA)
+Semantic theory in Generative grammar. This course is intended to provide graduate students with
+formal tools for semantic research as well as skills needed to follow discussion in contemporary
+semantic theory. It will be divided into three parts. We will start with some basic concepts in logic that
+are useful in current semantic analysis. We will also cover most of the material from Heim & Kratzer
+(1997) and practice solving problems related to that material. The second part of the course is
+dedicated to intensional semantics. In addition to the main textbook, we will read a few related
+"classical" original research papers. The last part of the course will deal with the topic of comparison
+and problems of comparison constructions in intensional contexts. Requirements: Students will be
+expected to participate actively in class discussion. I will assign 5 problem sets based on the readings
+and the lectures and a review paper due by the end of the semester. There will be a list of articles for
+reviewing to choose from.
+
+Course calendar
+
+April, 11
+Introduction: formal foundation to semantic theory
+Readings: Partee, Meulen et al. (1993): chapter 1, chapter 6, chapter 7 (pp135-149) , chapter 13
+(pp 315-331).
+April, 18
+No class (Good Friday)
+April, 25
+Compositionality; object language and metalanguage; characteristic functions of sets; semantic
+types; type-driven interpretation
+Readings: chapters 1,2 and 3 from Heim and Kratzer (1998)
+May, 2
+Functional application, predicate modification, predicate abstraction
+Readings: chapters 4 and 5 from Heim and Kratzer (1998)
+May, 9
+Quantifiers and quantification
+Readings: chapters 6 and 7 from Heim and Kratzer (1998), optional: Barwise and Cooper (1982),
+chapter 3 from May (1985)
+May, 16
+chapter 8 from Heim and Kratzer (1998), optional: Reinhart (1997)
+May, 23
+Scalar predicates: overview
+Readings: Lang (1989), Klein (1982), von Stechow (1984), chapter 2 from Kennedy (1999),
+Heim (2000), optional: Cresswell (1976) and chapter 1 from Stateva (2002).
+May, 30
+Introduction into intensional semantics
+Readings: chapter 1 from von Fintel and Heim (2003)
+June, 6
+guest lecture (part of the week long mini-course): Roger Schwarzschild, Rutgers Univeristy.
+
+Topic: The semantics of degree - the semantics of the comparative, measure phrases across
+categories, partitives and related constructions
+June, 13
+Modality
+Readings: chapter 2 from von Fintel and Heim (2003), Kratzer (1977)
+June, 20
+Ordering of worlds in modal semantics
+Readings: chapter 4 from von Fintel and Heim (2003), Kratzer (1991)
+June, 27
+De dicto - de re ambiguities in modal contexts
+Readings: chapter 5 from von Fintel and Heim (2003), (Percus 1998)
+July, 4
+Comparison and intensional contexts: scopal ambiguity
+Readings: chapter 2, section 5 from Rullmann (1995), (Heim 1998), Sharvit and Stateva (2002)
+July, 11
+Comparison and intensional contexts: comparative conditionals
+Readings: Beck (1997)
+
+References:
+Barwise, J. and R. Cooper (1981). Generalized quantifiers and natural language. Linguistics and
+Philosophy 4: 159-219.
+Beck, S. (1997). On the semantics of comparative conditionals.Linguistics and Philosophy 20: 229271.
+Cresswell, M. (1976). The semantics of degree. Montague grammar. B. Partee. New York, Academic
+Press: 261-292.
+Heim, I. (1998). Negative decomposition and comparatives, Ms, University of Connecticut colloquium.
+Heim, I. (2000). Degree operators and scope. Proceedings of SALT X, Ithaca, CLC Publications,
+Cornell University.
+Heim, I. and A. Kratzer (1998). Semantics in generative grammar. Malden, MA., Blackwell Publishers.
+Kennedy, C. (1999). Projecting the adjective: The syntax and semantics of gradability and
+comparison. New York, Garland.
+Klein, E. (1982). The interpretation of adjectival comparatives. Journal of Linguistics 18: 113-136.
+Kratzer, A. (1977). What 'must' and 'can' must and can mean. Linguistics and Philosophy 1(3): 337355.
+Kratzer, A. (1991). Modality. A. v. Stechow and D. Wunderlich: 639-650.
+Lang, E. (1989). The semantics of dimentional designation of spacial objects. Dimensional adjectives:
+Grammatical structure and conceptual interpretation. M. Bierwisch and E. Lang: 263-417.
+May, R. (1985). Logical Form: Its structure and derivation. Cambridge, Mass., MIT Press.
+
+Partee, B., A. t. Meulen, et al. (1993). Mathematical methods in linguistics. Dordrecht, Kluwer.
+Percus, O. (1998). Some instructions for the worldly. In proceedings of WCCFL 17.
+Reinhart, T. (1997). Quantifier scope: How labor is divided between QR and choice functions.
+Linguistics and Philosophy 20: 335-397.
+Rullmann, H. (1995). Maximality in the semantics of wh-constructions. PhD thesis, Amherst,
+University of Massachusetts.
+Sharvit, Y. and P. Stateva (2002). Superlative expressions, context and focus. Linguistics and
+Philosophy 25: 453-505.
+Stateva, P. (2002). How different are different degree constructions? PhD thesis, Storrs, University of
+Connecticut.
+Stechow, A. v. (1984). Comparing semantic theories of comparison. Journal of Semantics 3: 1-77.
+von Fintel, K. and I. Heim (2003). Intensional semantics. Ms. Cambridge, Mass, MIT.
+
+Fr. 13 - 15.30 Uhr, Potsdam Golm, Haus 24, Raum 154
+
+Die Lehrveranstaltungen des Graduiertenkollegs sind offen
+für Studierende der Germanistischen Linguistik im
+Hauptstudium.
+Anmeldung für die Seminare bei: Jörg von Thun
+(Koordination)
+Email: h0444n51@rz.hu-berlin.de
+Fon: +49 (0)30 2093-9776
+
+

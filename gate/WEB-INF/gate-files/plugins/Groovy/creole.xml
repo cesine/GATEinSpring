@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<CREOLE-DIRECTORY>
+  <JAR SCAN="true">groovy-gate.jar</JAR>
+  <JAR>lib/groovy-all-1.6.3.jar</JAR>
+</CREOLE-DIRECTORY>

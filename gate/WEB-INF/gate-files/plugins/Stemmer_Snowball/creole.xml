@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+
+<CREOLE-DIRECTORY>
+   <!-- Processing Resources -->
+  <CREOLE>
+
+    <RESOURCE>
+      <NAME>Stemmer PR</NAME>
+      <JAR>stemmer.jar</JAR>
+      <CLASS>stemmer.SnowballStemmer</CLASS>
+      <COMMENT>Wrapper for the Snowball stemmer.</COMMENT>
+      <HELPURL>http://gate.ac.uk/userguide/sec:parsers:stemmer</HELPURL>
+ <PARAMETER
+        NAME="document"
+        RUNTIME="true"
+        COMMENT="The document to be processed">gate.Document</PARAMETER>
+ <PARAMETER
+       NAME="annotationSetName"
+       RUNTIME="true"
+       DEFAULT=""
+       OPTIONAL="true"
+       COMMENT="The annotation set to be used for the generated annotations" >java.lang.String</PARAMETER>
+ <PARAMETER
+        NAME="annotationType"
+        RUNTIME="true"
+        DEFAULT="Token"
+        COMMENT="Annotation type to be processed" >java.lang.String</PARAMETER>
+   <PARAMETER
+        NAME="annotationFeature"
+        RUNTIME="true"
+        DEFAULT="string"
+        COMMENT="Feature containging a string of the word to be stemmed" >java.lang.String</PARAMETER>
+  <PARAMETER
+        NAME="language"
+        DEFAULT="english"
+        COMMENT="stemmer language" >java.lang.String</PARAMETER>
+   </RESOURCE>
+
+  </CREOLE>
+</CREOLE-DIRECTORY>

@@ -1,0 +1,521 @@
+<gate.util.persistence.GateApplication>
+  <urlList class="gate.util.persistence.CollectionPersistence">
+    <localList>
+      <gate.util.persistence.PersistenceManager-URLHolder>
+        <urlString>$relpath$../../../ANNIE</urlString>
+      </gate.util.persistence.PersistenceManager-URLHolder>
+      <gate.util.persistence.PersistenceManager-URLHolder>
+        <urlString>$relpath$../../../iaaPlugin</urlString>
+      </gate.util.persistence.PersistenceManager-URLHolder>
+      <gate.util.persistence.PersistenceManager-URLHolder>
+        <urlString>$relpath$../../../lkb_gazetteer</urlString>
+      </gate.util.persistence.PersistenceManager-URLHolder>
+    </localList>
+    <collectionType>java.util.ArrayList</collectionType>
+  </urlList>
+  <application class="gate.util.persistence.SerialAnalyserControllerPersistence">
+    <corpus class="gate.util.persistence.CorpusPersistence">
+      <docList>
+        <gate.util.persistence.LRPersistence>
+          <resourceType>gate.corpora.DocumentImpl</resourceType>
+          <resourceName>Wikipedia: Kevin Bacon</resourceName>
+          <initParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>markupAware</string>
+                <boolean>true</boolean>
+              </entry>
+              <entry>
+                <string>stringContent</string>
+                <string>Kevin Bacon - Wikipedia, the free encyclopedia
+
+Kevin Bacon
+From Wikipedia, the free encyclopedia
+Jump to: navigation , search
+For other uses, see Kevin Bacon (disambiguation) .
+Kevin Bacon
+Born Kevin Norwood Bacon
+July 8, 1958 ( 1958-07-08 ) (age�51)
+Philadelphia , Pennsylvania, United States
+Occupation Actor
+Years active 1978–present
+Spouse(s) Kyra Sedgwick (1988–present)
+Official website
+
+Kevin Norwood Bacon [ 1 ] (born July 8, 1958) is an American film and theater actor whose notable roles include Footloose , Flatliners , A Few Good Men , Apollo 13 , Mystic River , The Woodsman , Friday the 13th , Hollow Man , and Tremors .
+
+Bacon has been nominated for Emmy , Golden Globe and Screen Actors Guild Awards [ 2 ] and has been called one of the best actors to never receive an Oscar nomination. [ 3 ]
+Contents
+1 Biography 1.1 Early life and career
+1.2 Acclaim and success
+1.3 Career slump
+1.4 Comeback
+1.5 Continuing success
+1.6 Personal life
+1.7 Six Degrees of Kevin Bacon
+1.8 Music
+
+2 Filmography 2.1 Films
+2.2 Television
+
+3 Awards
+4 References
+5 External links
+
+[ edit ] Biography
+[ edit ] Early life and career
+
+Bacon, the youngest of six children, was born and raised in a close-knit family in Philadelphia , Pennsylvania. A former Park Avenue debutante, [ citation needed ] his mother, Ruth Hilda ( née Holmes; 1916–1991), taught elementary school and was a liberal activist, while his father, Edmund Bacon , was a well-respected architect. At 16, Bacon attended the Pennsylvania Governors School for the Arts, an invaluable state-funded five-week arts program which helped solidify Bacon&apos;s passion for the arts. From there, Bacon left home at age 17 to pursue a theater career in New York, where he was one of the youngest students ever admitted, and the youngest student to appear in a production at the Circle in the Square Theater School . &quot;I wanted life, man, the real thing&quot;, he later recalled to Nancy Mills of Cosmopolitan . &quot;The message I got was &apos;The arts are it. Business is the devil&apos;s work. Art and creative expression are next to godliness.&apos; Combine that with an immense ego and you wind up with an actor.&quot; [ 4 ]
+
+Bacon&apos;s decision to become an actor did not come without pressures. Describing his father to Mills as a &quot;city-planning superstar&quot;, he set very high goals for himself because he &quot;felt nothing less than stardom would be enough.&quot; [ 4 ] However, his movie debut in the fraternity comedy Animal House in 1978 did not lead to the instant fame for which he had hoped, and Bacon returned to waiting tables and auditioning for small roles in theater. He did a couple of stints on television soap operas Search For Tomorrow (1979) and The Guiding Light (1980–81) in New York while waiting for larger roles to come along. He refused an offer of a television series based on Animal House to be filmed in California in order to remain close to the New York stage. Some of his early stage work included Getting Out performed at New York&apos;s Phoenix Theater , and Flux which he did at Second Stage Theatre during their 1981–1982 season.
+
+His motivation to remain in New York still has resonance for Bacon. &quot;I think my decision had a lot to do with just being afraid&quot; he explained to Chase in Cosmopolitan . &quot; L.A. scared me. I call it the city of fear. I get scared when I land, and I live in fear there, and I think a lot of people do. I mean, I&apos;ve had a hard time in New York City too, but aesthetically and spiritually, I&apos;m an East Coast person.&quot; [ 5 ] With the support of his wife, actress Kyra Sedgwick , Bacon believes that he has come to terms with his qualms about Los Angeles , thus strengthening his commitment to acting. &quot;Our lives are still crazy, we still spend a ton of time out [in L.A.], and I&apos;ve finally admitted that the movie business means a lot to me&quot;, he told Chase. &quot;I used to say, it&apos;s okay, I can do it, but it isn&apos;t that important, and then I realized I was out of my mind; this is what I do for a living.&quot; [ 5 ]
+[ edit ] Acclaim and success
+
+Known for having what Entertainment Weekly called &quot;bone-dry humor and [an] average-Joe ability to tell it like it is&quot;, [ 6 ] Bacon has always been forthcoming about his lack of professional self-confidence, which has never stopped him from delivering powerful performances. His charm and style earned him the nick-name &quot;The Baconator&quot; which only his fans and friends recognize him by. In 1982, he won an Obie Award for his role in Forty-Deuce , a play about street hustlers, and soon after made his Broadway debut in Slab Boys , with then-unknowns Sean Penn and Val Kilmer . However, it was not until he portrayed Timothy Fenwick that same year in Barry Levinson &apos;s Diner �– costarring Steve Guttenberg , Daniel Stern , Mickey Rourke , Tim Daly and Ellen Barkin �– that he made an indelible impression on film critics and moviegoers alike. [ citation needed ] Set in Baltimore during Christmas week of 1959, Diner depicts the lives of nine young men in their early twenties who have been close friends since childhood but are gradually moving in different directions. By far the most aimless of the group, the surly, sarcastic Fenwick gets increasingly drunk as the story progresses, deriving great pleasure from playing practical jokes on his friends and outanswering contestants on the television quiz show College Bowl from the safety of his sofa. The New Yorker &apos;s Pauline Kael , who included Bacon&apos;s name on her list of the film&apos;s &quot;amazing&quot; performances, also noted that &quot;with his pointed chin, and the look of a mad Mick , [he] keeps Fenwick morose and yet demonic .&quot; David Denby of The New Yorker found Fenwick &quot;both attractive and creepily self-destructive &quot;, attributing much of Diner&apos; s success to the fact that it &quot;offers a completed vision of life, ecstatic in its recovery of forgotten pleasures, melancholy in its knowledge of how small a chance these men ever had of reclaiming their freedom.&quot; [ 7 ]
+
+Bolstered by the attention garnered by his performance in Diner , Bacon starred in the 1984 box-office smash Footloose . Directed by Herbert Ross and packed with energetic musical dance sequences, the film tells the story of Ren McCormick, a streetwise Chicago teenager (Bacon was actually 24 years old when filming began) who, after moving with his mother to a repressive small town in the Midwest , is determined to reverse the town minister&apos;s ban on rock-and-roll made years earlier. Richard Corliss of Time likened Footloose to the James Dean classic Rebel Without a Cause and the old Mickey Rooney / Judy Garland musicals, commenting that the film includes &quot;motifs on book burning, mid-life crisis, AWOL parents, fatal car crashes, drug enforcement, and Bible Belt vigilantism.&quot; [ 8 ] Part of the conflict centers around the relationship between the minister, played by John Lithgow , and his wild teenage daughter, played by Lori Singer , who falls in love with Bacon&apos;s character and joins forces with him to put on a dance in a neighboring town. To prepare for the role, Bacon enrolled at a high school as a transfer student named &quot;Ren McCormick&quot; and studied teenagers before leaving in the middle of the day. [ citation needed ] Sporting a punk haircut for the role and a rebellious James Dean-type attitude somewhat different than that of the Fenwick character in Diner , Bacon did earn strong reviews for Footloose , appearing on the cover of People magazine soon after its release. [ citation needed ] David Ansen of Newsweek noted that Footloose &quot;works because Bacon [is] always a fine actor,&quot; while Corliss found his performance to be &quot;smart and appealing&quot;. [ 8 ] The film itself, wrote Ansen, &quot;has a lively, sweet infectious spirit,&quot; providing a &quot;jolt of disposable but pleasant energy that makes you want to roll back the rug and boogie.&quot; [ cite this quote ]
+[ edit ] Career slump
+
+Bacon&apos;s long-awaited exposure from these two films proved a mixed blessing, however: he found himself typecast as the characters he portrayed in the films Diner and Footloose . Bacon would have difficulty shaking this on-screen image. His portrayal of Fenwick, Bacon explained to Mills in Cosmopolitan , &quot;made enough of an impact that it was very difficult for me to get a lead in a movie. The perception was that I was incapable of being heroic, that I was offbeat, dark, nutty, and messed up.&quot; [ cite this quote ] Nor did he welcome the teen-idol image that Footloose offered him, shunning other chances to play what he deemed &quot;angst-ridden teenagers&quot;. [ cite this quote ] For the next several years Bacon chose films that cast him against either type and experienced, by his own estimation, a career slump. In 1988 he portrayed a newlywed who, ambivalent about marriage, faces the added burden of impending fatherhood in John Hughes &apos;s comedy She&apos;s Having a Baby , costarring Elizabeth McGovern . The next year he starred in a Christopher Guest comedy called The Big Picture , playing a film student whose excessive pride leads to trouble after achieving instant Hollywood fame as a filmmaker. While The Nation found little else redeeming about the movie, it did comment on Bacon&apos;s &quot;perfect face and unfailing charm as Nick&quot;, noting the actor&apos;s ability to &quot;play just about anything&quot;. [ cite this quote ]
+
+In 1990, Bacon had two successful roles. He played a character who saved his town from under-the-earth &quot;graboid&quot; monsters in the comedy/horror film Tremors �– a role that People found him &quot;far too accomplished&quot; [ cite this quote ] to play�– and portrayed an earnest medical student experimenting with death in Joel Schumacher &apos;s Flatliners .
+
+Bacon&apos;s next project was to star, opposite Elizabeth Perkins , in the 1991 romantic comedy He Said, She Said , codirected by Ken Kwapis and Marisa Silver . As clashing newspaper reporters who are forced to write a column together, the two fall in love. The film&apos;s story is told in two parts: first from the viewpoint of Bacon&apos;s character, which Kwapis directed, and then from the viewpoint of Perkins&apos;s character, directed by Silver. Despite lukewarm reviews and low audience turnout, He Said, She Said was illuminating for Bacon. Required to play a character with sexist attitudes, he admitted that the role was not that large a stretch for him. &quot;Until he meets Elizabeth, he sees women as sex objects...not people to respect or share your life with,&quot; he told Mills. &quot;But he changes when he falls in love with the strongest woman he could possibly find. In some ways, this character is like me. What he&apos;s going through is maybe something I was going through ten or twelve years ago.&quot; [ cite this quote ] After completion of He Said, She Said , Perkins had nothing but praise for her costar both on and off screen. &quot;When Kevin first came on the set, I thought he was one of those actors who just breezes in and doesn&apos;t need to prepare for a scene. After a couple weeks, I realized that he does his homework, is extremely [focused], and never misses a beat,&quot; she remarked in Cosmopolitan . &quot;What you assume is not always the truth about Kevin. He can come off as suave, and people may mistake it for arrogance. But underneath, he&apos;s very compassionate and kindhearted.&quot; [ cite this quote ]
+[ edit ] Comeback
+
+By 1991, Bacon began to give up the idea of playing leading men in big-budget films and to remake himself as a character actor. &quot;The only way I was going to be able to work on &apos;A&apos; projects with really &apos;A&apos; directors was if I wasn&apos;t the guy who was starring&quot;, he confided to The New York Times writer Trip Gabriel. &quot;You can&apos;t afford to set up a $40 million movie if you don&apos;t have your star.&quot; [ 9 ]
+
+His performance that year as gay prostitute Willie O&apos;Keefe in Oliver Stone &apos;s JFK received tremendous critical acclaim, Premiere calling his work &quot;flawless&quot;, while National Review described it as &quot;stunning&quot;. Shining among an ensemble cast in a small but memorable role had its appeal for Bacon, whose career began to swing in a more positive direction. Encouraged by his JFK reviews, he went on to play another character role�– prosecuting attorney Jack Ross in the 1992 military courtroom drama A Few Good Men , starring Tom Cruise and Jack Nicholson . Michael Sragow of The New Yorker found Bacon&apos;s performance to be the strongest in the film: &quot;Kevin Bacon, as the prosecutor, gives the most full-bodied performance. You find yourself believing he is a career serviceman�– not because of his flattop haircut but because he&apos;s marinated in Marine tradition. His boyish competitive streak emerges from a saltier place than Cruise&apos;s.&quot; [ cite this quote ]
+
+Bacon&apos;s newfound career momentum did not stop with these two films; that same year he returned to the theater to play, opposite Saundra Santiago , in Spike Heels , directed by Michael Greif . Time , which praised the play&apos;s &quot;tart wit, feminist insight, and quirky detours of plot&quot;, also pronounced Bacon, who portrays a wealthy cad, its &quot;standout&quot; for his ability to blend &quot;ribaldry, rudeness, rapscallion reprehensibility, and believable redemption.&quot; [ 10 ]
+
+It was not until his work on The River Wild in 1994, however, that Bacon began to feel more confident about the success of his professional comeback. He earned a Golden Globe Award nomination for his portrayal of a compulsive liar whose boyish charm turns diabolic when he overtakes the raft of a former river guide�– played by Meryl Streep �– and her family on a white-water rafting trip. As Wade, Bacon initially flirts with Streep&apos;s character and then befriends her young son until it becomes apparent that he only wants her knowledge of the river to secure freedom for himself and his cohorts who are on the lam after a violent robbery. Describing it to Chase in Cosmopolitan as a &quot;grueling shoot,&quot; in which &quot;every one of us fell out of the boat at one point or another and had to be saved,&quot; [ cite this quote ] Bacon had the added stress of worrying about Sedgwick and their children, who had joined him on location. Like the actors and crew, they had to come up the river each day in a helicopter, which would land on a raft and allow them to trudge to shore. &quot;I&apos;d hear somebody say, &apos;The Bacons are in the chopper,&apos; and I&apos;d see them waving, and then they&apos;d come down,&quot; Bacon recalled. &quot;It was terrifying because everything I loved was in that whirlybird.&quot; [ cite this quote ] Dispelling any lingering suggestions that Bacon might not be leading-man material, director Curtis Hanson told The New York Times : &quot;Kevin in our movie is playing a movie-star part. In another era�– if we were making this movie in 1950�– I would have wanted Robert Mitchum to play that part.&quot; [ 9 ] Hanson, after reflecting on Bacon&apos;s earlier career, also ventured to make some predictions about his future. &quot;Kevin was going through a period of his life, agewise, that is as fragile as being a child star....You can be hot for a year or two and then you can fade rapidly,&quot; he explained to Hanson. &quot;Whereas what Kevin&apos;s doing now—-whether by design or by accident�– is he&apos;s building a very fruitful and long career...and he just keeps getting better.&quot; [ 9 ]
+
+No matter how grueling the shoot of The River Wild was, it could not compare to the hardships Bacon experienced preparing for his next film, where he won the Broadcast Film Critics Association Award in 1995, Murder in the First . Based on a true story that occurred during the Depression , the film recounts the drama of Henri Young, a petty thief imprisoned in Alcatraz , who, after spending three years in solitary confinement, kills the inmate whose betrayal of him led to the punishment. Though Christian Slater , as his public defender, received top billing for the film, Bacon&apos;s character was the dramatic core. To transform himself into Henri Young, Bacon lost 20 pounds, shaved his head, and wore contact lenses that completely concealed his eyes and had to be removed every hour. He spent some time in a jail cell to get the feeling of being imprisoned. &quot;In every scene, the character suffers a different level of pain,&quot; he explained to Chase. &quot;Because he spent three years in that dungeon trying to keep warm, I picked this extreme physicality for him when he comes out. I&apos;m all hunched over, and I walk with a limp, and I had to pull myself into that twisted condition every day.&quot; [ cite this quote ] Helping Bacon through the physical and psychological wringer of the role was friend and fellow actor Gary Oldman , ironically playing a sadistic warden who routinely brutalizes Young. &quot;You know, when somebody&apos;s thrown a bucket of cold water on you, and he&apos;s beating you with a blackjack, and the blood is flying, it helps if the person wielding the blackjack is someone you trust,&quot; Bacon told Cosmopolitan&apos;s Chase. &quot;It lets you fly.&quot; For Bacon, the experience of being filmed naked for several weeks in a Los Angeles warehouse and encrusted with mud and live bugs was not one he will forget soon. Nor will director Marc Rocco , who told Premiere that working with Bacon was &quot;the most rewarding experience I&apos;ve ever had with an actor.&quot; [ cite this quote ] The film did well at the box office, and Bacon was given good reviews for his performance.
+[ edit ] Continuing success
+Bacon, 2007
+
+The wave of success left Bacon with little time to rest between projects. His subsequent film, Apollo 13 , released in the summer of 1995, was a blockbuster [ citation needed ] . Preparation for the film, which tells the true story of an aborted space mission (Bacon portrayed astronaut Jack Swigert ), involved some difficult stunt work. To simulate space travel , Bacon and costars Tom Hanks and Bill Paxton took several trips on huge NASA KC-135 airplanes, which flies a series of parabolic curves in order to render passengers weightless for short periods of time. Bacon, who enjoyed this sensation no more than the daily exposure to icy wind and water on the set of The River Wild , joked to Entertainment Weekly , &quot;I mean, I&apos;m not a thrill seeker, but I keep getting into these situations.&quot; [ cite this quote ]
+
+Bacon reverted to his trademark dark role once again, as a brutal and sadistic reform school warden in Sleepers in 1996. Like Murder in the First , Sleepers presents a gripping yet horrifying reality, in stark contrast to Bacon&apos;s ensuing appearance in the lighthearted romantic comedy, Picture Perfect the following year. Bacon again resurrected his oddball mystique that year as a retarded houseguest in Digging to China , and as a disc jockey corrupted by payola in Telling Lies in America . As the executive producer of 1998&apos;s Wild Things , Bacon reserved a supporting role for himself, and went on to star in Stir of Echoes (directed by David Koepp ) in 1999, and in Paul Verhoeven &apos;s Hollow Man in 2000.
+
+Bacon, Colin Firth and Rachel Blanchard depict a ménage à trois in their film, Where the Truth Lies . Bacon and director Atom Egoyan have condemned the MPAA ratings board decision to give the film their &quot; NC-17 &quot; rating over the preferable &quot;R&quot;. Bacon decried the decision, commenting: &quot;I don&apos;t get it, when I see films (that) are extremely violent, extremely objectionable sometimes in terms of the roles that women play, slide by with an R, no problem, because the people happen to have more of their clothes on.&quot; [ 11 ] Bacon was again acclaimed for a dark starring role playing an offending pedophile on parole in the 2004 film The Woodsman ; he was nominated best actor receiving the Independent Spirit Award.
+Bacon speaking before a premiere of Taking Chance in February 2009
+
+He appeared in the HBO Films production of Taking Chance , a film based on a story of the same name written by Lieutenant Colonel Michael Strobl , an American &apos; Desert Storm &apos; war veteran. The film premiered on HBO on February 21, 2009.
+
+In January 2009, Bacon appeared in a video on funnyordie.com pranking people around Venice Beach and at the end of each prank exclaiming the person was just &quot;Bacon&apos;d&quot;. [ 12 ]
+[ edit ] Personal life
+
+Bacon has been married to actress Kyra Sedgwick since September 4, 1988; they met on the set of the PBS version of Lanford Wilson &apos;s play Lemon Sky . &quot;The time I was hitting what I considered to be bottom was also the time I met my wife, our kids were born, good things were happening&quot;, he explained to Cosmopolitan&apos;s Chase. &quot;And I was able to keep supporting myself; that always gave me strength.&quot; [ cite this quote ]
+
+Bacon and Sedgwick have starred together in Pyrates , Murder in the First , and The Woodsman . They have two children, Travis Sedgwick Bacon (born June 23, 1989 in Los Angeles, California ) and Sosie Ruth Bacon (born March 15, 1992). The family resides on the Upper West Side of Manhattan .
+
+Bacon and Sedgwick appeared in will.i.am &apos;s video It&apos;s a New Day which was released following Barack Obama &apos;s 2008 presidential win.
+
+Bacon and Sedgwick lost an undisclosed amount of money in the Ponzi scheme of infamous fraudulent investor Bernard Madoff . [ 13 ] [ 14 ]
+[ edit ] Six Degrees of Kevin Bacon
+Kevin Bacon greeting fans in Columbia , SC during the production of Death Sentence October, 2006.
+Main article: Six Degrees of Kevin Bacon
+
+Bacon is the subject of the trivia game titled Six Degrees of Kevin Bacon , based on the idea that, due to his prolific screen career , any Hollywood actor can be &quot;linked&quot; to another in a handful of &quot;steps&quot; based on their associations with Bacon. Although it has been proven that there are &quot;better&quot; centers in the Hollywood universe, such as Sean Connery , Christopher Lee , Rod Steiger , Gene Hackman or Michael Caine , Bacon&apos;s name remained the focus because he was the first one selected by the game&apos;s creators, and because the name &quot;Kevin Bacon&quot; sounds similar to the last word of the phrase &quot; six degrees of separation &quot;. A person&apos;s number of degrees of separation from Kevin Bacon is known as one&apos;s &quot;Bacon Number&quot; which takes its name from Erdős number .
+
+Though he was initially dismayed by the game, the meme stuck, and Bacon eventually embraced it, forming the &quot;charitable initiative&quot; SixDegrees.org , a social networking site intended to link people to charities and each other. [ 15 ]
+
+Bacon even eventually starred in a commercial for the Visa Check Card, playing on the &apos;six degrees of separation&apos; to prove his identity.
+[ edit ] Music
+
+In 1995 Bacon formed a band called The Bacon Brothers with his brother, Michael . The duo has released six albums .
+
+[ edit ] Filmography
+[ edit ] Films
+Year Film Role Notes
+1978 National Lampoon&apos;s Animal House Chip Diller
+1979 Starting Over Husband
+The Gift Teddy
+1980 Hero at Large 2nd Teenager
+Friday the 13th Jack Burrell
+1981 Only When I Laugh Don
+1982 Diner Timothy Fenwick Jr.
+Forty Deuce Ricky
+1983 Enormous Changes at the Last Minute Dennis
+1984 Footloose Ren McCormick
+1986 Quicksilver Jack Casey
+1987 White Water Summer Vic
+End of the Line Everett
+Planes, Trains &amp; Automobiles Taxi Racer
+1988 She&apos;s Having a Baby Jefferson &apos;Jake&apos; Edward Briggs
+1989 Criminal Law Martin Thiel
+The Big Picture Nick Chapman
+1990 Tremors Valentine McKee
+Flatliners David Labraccio
+1991 Pyrates Ari
+Queens Logic Dennis
+He Said, She Said Dan Hanson
+JFK Willie O&apos;Keefe
+1992 A Few Good Men Capt. Jack Ross
+1994 The Air Up There Jimmy Dolan
+The River Wild Wade
+1995 Murder in the First Henri Young
+Apollo 13 Jack Swigert
+Balto Balto Bacon&apos;s only voice-over role
+1996 Sleepers Sean Nokes
+1997 Picture Perfect Sam Mayfair
+Destination Anywhere Mike
+Telling Lies in America Billy Magic
+1998 Digging to China Ricky Schroth
+Wild Things Sgt. Ray Duguette
+1999 Stir of Echoes Tom Witzky
+2000 My Dog Skip Jack Morris
+We Married Margo Himself
+Hollow Man Sebastian Caine
+2001 Novocaine Lance Phelps
+2002 Trapped Joe Hickey
+2003 Mystic River Sean Devine
+In the Cut John Graham
+2004 The Woodsman Walter
+Cavedweller Randall Pritchard
+2005 Loverboy Marty also directed
+Beauty Shop Jorge
+Where the Truth Lies Lanny Morris
+2007 Death Sentence Nick Hume
+Rails &amp; Ties Tom Stark
+2008 The Air I Breathe Love
+Frost/Nixon Jack Brennan
+2009 Taking Chance Lt. Col. Michael Strobl
+The Magic 7 Himself
+New York, I Love You Tom
+My One and Only Dan
+Short Subjects A Little Vicious (1991) (narrator)
+New York Skyride (1994) (narrator)
+Imagine New York (2003) as Himself
+Natural Disasters: Forces of Nature (2004) (narrator)
+Saving Angelo (2008) as Brent
+[ edit ] Television
+Year Show Role Notes
+1979 Search for Tomorrow Todd Adamson
+1980-1981 The Guiding Light T. J. &apos;Tim&apos; Werner #2 Six episodes
+1983 The Demon Murder Case Kenny Miller Television film
+1984 Mister Roberts Ens. Frank Pulver
+1985 The Little Sister Probation Officer Uncredited; television film
+1988 Lemon Sky Alan Television film
+1994 Frasier Vic Single episode
+2002 Will &amp; Grace Himself Single episode: &quot;Bacon and Eggs&quot;
+Directing The Closer (2006) (Episode: Serving the King: Part 2)
+The Closer (2007) (Episode: Blindsided)
+The Closer (2008) (Episode: Sudden Death)
+The Closer (2009) (Episode: Waivers of Extradition)
+[ edit ] Awards
+Won 1996 BFCA Award for Best Actor – Murder in the First
+2001 Blockbuster Entertainment Award for Favorite Actor - Science Fiction – Hollow Man
+2003 BSFC Award for Best Cast – Mystic River
+Nominated 1995 Golden Globe Award for Best Supporting Actor - Motion Picture – The River Wild
+1996 Screen Actors Guild Award for Outstanding Performance by a Male Actor in a Supporting Role - Motion Picture – Murder in the First
+2001 MTV Movie Award for Best Villain – Hollow Man
+2004 Screen Actors Guild Award for Outstanding Performance by a Cast in a Motion Picture – Mystic River
+2005 Independent Spirit Award for Best Male Lead – The Woodsman
+2009 Screen Actors Guild Award for Outstanding Performance by a Cast in a Motion Picture – Frost/Nixon
+2009 Emmy Award for Outstanding Lead Actor – Miniseries or a Movie – Taking Chance
+[ edit ] References
+^ Gary Boyd Roberts. &quot; Ten Further Hollywood Figures (or Groups Thereof) &quot;. New England Historic Genealogical Society . http://www.newenglandancestors.org/education/articles/research/special_guests/gary_boyd_roberts/gbr_78.asp . Retrieved 2008-01-02 . �
+^ Kevin Bacon&apos;s awards at IMDB
+^ &quot;Oscars: the best actors never to have been nominated&quot; from The Guardian
+^ a b Cosmopolitan . March 1991, p. 92.
+^ a b Cosmopolitan . September 1994, p. 178.
+^ Jeff Gordinier (January 27, 1995). &quot; Breakout Star &quot;. Entertainment Weekly. pp.�27 . http://www.ew.com/ew/article/0,,295838,00.html . �
+^ Pauline Kael (April 5, 1982). &quot;Review: Diner&quot;. The New Yorker. �
+^ a b Richard Corliss (February 20, 1984). &quot; Revel Without a Cause &quot;. TIME . http://www.time.com/time/magazine/article/0,9171,950019,00.html . �
+^ a b c Trip Gabriel (September 25, 1994). &quot; A Second Wind Is Blowing For Kevin Bacon &quot;. The New York Times . http://query.nytimes.com/gst/fullpage.html?res=9C07E6D91F3BF936A1575AC0A962958260&amp;sec=&amp;spon=&amp;pagewanted=all . �
+^ &quot; Reviews Short Takes &quot;. TIME. June 15, 1992 . http://www.time.com/time/magazine/article/0,9171,975774,00.html . �
+^ Bruce Kirkland (2005-09-14). &quot; Kevin Bacon irked over movie rating &quot;. Toronto Sun . http://jam.canoe.ca/Movies/2005/09/14/1216527.html . �
+^ http://www.funnyordie.com/videos/7dabf82357/
+^ http://www.financialpost.com/news/story.html?id=1127558
+^ Bacon confirmed this on Late Show with Craig Ferguson, June 8, 2009
+^ &quot; Six Degrees &quot; . http://www.sixdegrees.org/ . Retrieved 2008-01-02 . �
+[ edit ] External links
+Wikimedia Commons has media related to: Kevin Bacon
+Kevin Bacon at the Internet Movie Database
+Kevin Bacon at the Internet Broadway Database
+Kevin Bacon at the Internet off-Broadway Database
+Kevin Bacon at Allmovie
+Persondata
+NAME Bacon, Kevin Norwood
+ALTERNATIVE NAMES
+SHORT DESCRIPTION American film and theater actor , Musician
+DATE OF BIRTH July 8, 1958
+PLACE OF BIRTH Philadelphia, Pennsylvania
+DATE OF DEATH
+PLACE OF DEATH
+Retrieved from &quot; http://en.wikipedia.org/wiki/Kevin_Bacon &quot;
+Categories : Actors from Pennsylvania | American film actors | American soap opera actors | American television actors | Obie Award recipients | People from Philadelphia, Pennsylvania | Sedgwick family | 1958 births | Living people
+Hidden categories: All articles with unsourced statements | Articles with unsourced statements from August 2008 | Articles with unsourced statements from January 2008 | Articles with unsourced quotes | Articles with unsourced statements from April 2009
+Views
+Article
+Discussion
+Edit this page
+History
+Personal tools
+Try Beta
+Log in / create account
+Navigation
+Main page
+Contents
+Featured content
+Current events
+Random article
+Search
+�
+Interaction
+About Wikipedia
+Community portal
+Recent changes
+Contact Wikipedia
+Donate to Wikipedia
+Help
+Toolbox
+What links here
+Related changes
+Upload file
+Special pages
+Printable version
+Permanent link
+Cite this page
+Languages
+العربية
+Български
+Català
+Dansk
+Deutsch
+Español
+Français
+한국어
+Hrvatski
+Ido
+Bahasa Indonesia
+Italiano
+עברית
+Magyar
+Nederlands
+日本語
+‪Norsk (bokmål)‬
+Occitan
+Polski
+Português
+Русский
+Simple English
+Slovenčina
+Српски / Srpski
+Suomi
+Svenska
+ไทย
+Türkçe
+中文
+This page was last modified on 17 October 2009 at 01:58.
+Text is available under the Creative Commons Attribution-ShareAlike License ; additional terms may apply. See Terms of Use for details.
+Wikipedia� is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization.
+Privacy policy
+About Wikipedia
+Disclaimers
+</string>
+              </entry>
+              <entry>
+                <string>encoding</string>
+                <string>windows-1251</string>
+              </entry>
+              <entry>
+                <string>sourceUrlStartOffset</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>preserveOriginalContent</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>collectRepositioningInfo</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>sourceUrl</string>
+                <gate.util.persistence.PersistenceManager-URLHolder>
+                  <urlString>http://en.wikipedia.org/wiki/Kevin_Bacon</urlString>
+                </gate.util.persistence.PersistenceManager-URLHolder>
+              </entry>
+              <entry>
+                <string>mimeType</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>sourceUrlEndOffset</string>
+                <null/>
+              </entry>
+            </localMap>
+          </initParams>
+        </gate.util.persistence.LRPersistence>
+      </docList>
+      <resourceType>gate.corpora.CorpusImpl</resourceType>
+      <resourceName>Actors Articles</resourceName>
+      <initParams class="gate.util.persistence.MapPersistence">
+        <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+        <localMap>
+          <entry>
+            <string>documentsList</string>
+            <gate.util.persistence.CollectionPersistence>
+              <localList>
+                <gate.util.persistence.LRPersistence reference="../../../../../../docList/gate.util.persistence.LRPersistence"/>
+              </localList>
+              <collectionType>java.util.Arrays$ArrayList</collectionType>
+            </gate.util.persistence.CollectionPersistence>
+          </entry>
+        </localMap>
+      </initParams>
+    </corpus>
+    <prList class="gate.util.persistence.CollectionPersistence">
+      <localList>
+        <gate.util.persistence.PRPersistence>
+          <runtimeParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>setsToKeep</string>
+                <gate.util.persistence.CollectionPersistence>
+                  <localList/>
+                  <collectionType>java.util.ArrayList</collectionType>
+                </gate.util.persistence.CollectionPersistence>
+              </entry>
+              <entry>
+                <string>document</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>annotationTypes</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>keepOriginalMarkupsAS</string>
+                <boolean>true</boolean>
+              </entry>
+            </localMap>
+          </runtimeParams>
+          <resourceType>gate.creole.annotdelete.AnnotationDeletePR</resourceType>
+          <resourceName>Document Reset</resourceName>
+          <initParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap/>
+          </initParams>
+          <features class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap/>
+          </features>
+        </gate.util.persistence.PRPersistence>
+        <gate.util.persistence.LanguageAnalyserPersistence>
+          <runtimeParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>annotationSetName</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>annotationLimit</string>
+                <int>0</int>
+              </entry>
+              <entry>
+                <string>document</string>
+                <null/>
+              </entry>
+            </localMap>
+          </runtimeParams>
+          <resourceType>com.ontotext.kim.gate.KimGazetteer</resourceType>
+          <resourceName>Entertainers Gazetteer</resourceName>
+          <initParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>forceCaseSensitive</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>dictionaryPath</string>
+                <gate.util.persistence.PersistenceManager-URLHolder>
+                  <urlString>$relpath$../dictionary_from_remote_repository</urlString>
+                </gate.util.persistence.PersistenceManager-URLHolder>
+              </entry>
+            </localMap>
+          </initParams>
+          <features class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap/>
+          </features>
+        </gate.util.persistence.LanguageAnalyserPersistence>
+        <gate.util.persistence.LanguageAnalyserPersistence>
+          <runtimeParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>deleteOnNoRelations</string>
+                <boolean>true</boolean>
+              </entry>
+              <entry>
+                <string>document</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>annotationTypes</string>
+                <gate.util.persistence.CollectionPersistence>
+                  <localList>
+                    <string>Lookup</string>
+                  </localList>
+                  <collectionType>java.util.ArrayList</collectionType>
+                </gate.util.persistence.CollectionPersistence>
+              </entry>
+              <entry>
+                <string>inputASName</string>
+                <string></string>
+              </entry>
+              <entry>
+                <string>query</string>
+                <string>SELECT ?BirthPlace WHERE { &lt;%s&gt; &lt;http://dbpedia.org/ontology/birthplace&gt; ?BirthPlace . } LIMIT 10</string>
+              </entry>
+            </localMap>
+          </runtimeParams>
+          <resourceType>com.ontotext.kim.gate.SesameEnrichment</resourceType>
+          <resourceName>LDSR Enrichment</resourceName>
+          <initParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>repositoryId</string>
+                <string>owlim</string>
+              </entry>
+              <entry>
+                <string>server</string>
+                <string>http://ldsr.ontotext.com/openrdf-sesame/</string>
+              </entry>
+              <entry>
+                <string>version</string>
+                <null/>
+              </entry>
+            </localMap>
+          </initParams>
+          <features class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap/>
+          </features>
+        </gate.util.persistence.LanguageAnalyserPersistence>
+      </localList>
+      <collectionType>java.util.ArrayList</collectionType>
+    </prList>
+    <resourceType>gate.creole.SerialAnalyserController</resourceType>
+    <resourceName>Movie-stars Pipeline</resourceName>
+    <initParams class="gate.util.persistence.MapPersistence">
+      <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+      <localMap/>
+    </initParams>
+    <features class="gate.util.persistence.MapPersistence">
+      <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+      <localMap/>
+    </features>
+  </application>
+</gate.util.persistence.GateApplication>

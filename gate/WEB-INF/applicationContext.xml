@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/*
+ * This file is part of a hands-on exercise for the third GATE training course,
+ * Montreal, August/September 2010.  It is released under the GNU Lesser
+ * General Public Licence version 3.0, a copy of which is available at
+ * http://gate.ac.uk/gate/licence.html
+ *
+ * Original code (c) 2010 The University of Sheffield.
+ */
+-->
+<beans
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:gate="http://gate.ac.uk/ns/spring"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+      http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+      http://www.springframework.org/schema/context
+      http://www.springframework.org/schema/context/spring-context-2.5.xsd
+      http://gate.ac.uk/ns/spring
+      http://gate.ac.uk/ns/spring.xsd
+    ">
+
+  <!-- enable the @PostConstruct and @PreDestroy annotation handling --> 
+  <context:annotation-config />
+
+  <!-- init gate -->
+  <gate:init gate-home="/WEB-INF/gate-files"
+             plugins-home="/WEB-INF/gate-files/plugins"
+             site-config-file="/WEB-INF/gate-files/gate.xml"
+             user-config-file="/WEB-INF/gate-files/user-gate.xml"/>
+
+  <!-- set up the definition of the GATE application.  This will load one copy
+  of the application and then duplicate it. -->
+  <gate:duplicate id="myApp">
+    <gate:saved-application location="/WEB-INF/gate-files/application.xgapp" />
+  </gate:duplicate>
+
+  <!-- Define the pooled handler bean -->
+  <bean class="ca.openlanguage.nlpgate.GateHandler"
+        id="gateHandler">
+    <property name="application" ref="myApp" />
+    <!-- Pooling configuration, modify this to control pool parameters -->
+    <gate:pooled-proxy max-size="3"
+                       initial-size="3" />
+  </bean>
+</beans>
+

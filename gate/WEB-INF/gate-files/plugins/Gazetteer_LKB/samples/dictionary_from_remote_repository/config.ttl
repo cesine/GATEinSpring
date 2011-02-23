@@ -1,0 +1,17 @@
+# Sesame configuration template for a (proxy for a) remote repository
+#
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rep: <http://www.openrdf.org/config/repository#>.
+@prefix hr: <http://www.openrdf.org/config/repository/http#>.
+@prefix lkbg: <http://www.ontotext.com/lkb_gazetteer#>.
+
+[] a rep:Repository ;
+   rep:repositoryImpl [
+      rep:repositoryType "openrdf:HTTPRepository" ;
+      hr:repositoryURL <http://ldsr.ontotext.com/openrdf-sesame/repositories/owlim>
+   ];
+   rep:repositoryID "owlim" ;
+   rdfs:label "LDSR" .
+   
+[] a lkbg:DictionaryConfiguration ; 
+  lkbg:caseSensitivity "CASE_INSENTIVE" .

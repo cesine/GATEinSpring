@@ -1,0 +1,42 @@
+#
+# Sesame configuration template for a owlim repository
+#
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix rep: <http://www.openrdf.org/config/repository#>.
+@prefix sr: <http://www.openrdf.org/config/repository/sail#>.
+@prefix sail: <http://www.openrdf.org/config/sail#>.
+@prefix owlim: <http://www.ontotext.com/trree/owlim#>.
+
+[] a rep:Repository ;
+   rep:repositoryID "owlim" ;
+   rdfs:label "Sample KB Repository" ;
+   rep:repositoryImpl [
+      rep:repositoryType "openrdf:SailRepository" ;
+      sr:sailImpl [
+         sail:sailType "swiftowlim:Sail" ;
+         owlim:ruleset "owl-horst" ;
+		 owlim:partialRDFS  "true" ;
+         owlim:noPersist "true" ;
+         owlim:storage-folder "owlim-storage" ;
+		 owlim:base-URL "http://proton.semanticweb.org/2006/05/protons#" ;
+         owlim:new-triples-file "new-triples-file.nt" ;
+         owlim:entity-index-size "200000" ;
+         owlim:jobsize "200" ;
+		 owlim:repository-type "in-memory-repository" ;
+		 #New resource - add line to 'imports' and a corresponding line to 'defaultNS'.
+		 #Order and count of both 'imports' and 'defaultNS' matters!
+		 owlim:imports 
+				"%relpath%/kb/owl/owl.rdfs;
+				 %relpath%/kb/owl/protons.owl;
+				 %relpath%/kb/owl/protont.owl;
+				 %relpath%/kb/owl/protonu.owl;
+				 %relpath%/kb/univ-bench.owl;" ;
+
+		 owlim:defaultNS 
+               "http://www.w3.org/2002/07/owl#;
+				http://proton.semanticweb.org/2006/05/protons#;
+				http://proton.semanticweb.org/2006/05/protont#;
+				http://proton.semanticweb.org/2006/05/protonu#;
+				http://www.ontotext.com/kim/2006/05/wkb#;"          
+      ]
+   ].

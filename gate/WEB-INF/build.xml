@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!--
+/*
+ * This file is part of a hands-on exercise for the third GATE training course,
+ * Montreal, August/September 2010.  It is released under the GNU Lesser
+ * General Public Licence version 3.0, a copy of which is available at
+ * http://gate.ac.uk/gate/licence.html
+ *
+ * Original code (c) 2010 The University of Sheffield.
+ */
+-->
+<project name="gate-webapp" default="compile">
+
+  <property file="build.properties" />
+  <property name="gate.home" location="/home/gina/GATE-6.0/" />
+
+  <target name="init">
+    <copy todir="lib">
+      <fileset dir="${gate.home}/lib">
+        <include name="*.jar" />
+        <!-- don't copy the GATE version of the spring JARs, we're using a
+        different one -->
+        <exclude name="spring*.jar" />
+      </fileset>
+      <fileset dir="${gate.home}/bin" includes="gate.jar" />
+    </copy>
+    <mkdir dir="classes" />
+    <path id="compile.classpath">
+      <fileset dir="lib" includes="*.jar" />
+      <!-- need the servlet API to compile -->
+      <pathelement location="../../runner/servlet-api-2.5-6.1.14.jar" />
+    </path>
+  </target>
+
+  <target name="clean">
+    <delete dir="classes" />
+  </target>
+
+  <target name="compile" depends="init">
+    <javac destdir="classes"
+           srcdir="src"
+           classpathref="compile.classpath"
+           source="1.5" target="1.5" />
+  </target>
+
+</project>
+

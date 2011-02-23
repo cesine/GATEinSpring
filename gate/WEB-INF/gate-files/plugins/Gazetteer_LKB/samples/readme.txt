@@ -1,0 +1,1 @@
+Put any of the folders in the dictionaryPath parameter in the Large KB gazetteer PR.

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	This is a GATE CREOLE plugin descriptor.
+	It contains GATE processing resources (PRs), defined in kim, which can be used without rinning
+	a KIM server. Compare these with the processing resources, defined in 
+	envrionments/*/files/config.xml which require running a KIM Server either in the same
+	virtual machine or as a separate process. The PRs below are pre-configured not use any 
+	KIM service. 
+	
+	See the GATE documentation for details on using CREOLE plugins and general information
+	about the GATE plugin model.
+	http://www.gate.ac.uk/sale/tao/splitch3.html#x5-630003.4
+	http://www.gate.ac.uk/sale/tao/splitch4.html#x6-1150004 -->
+<CREOLE-DIRECTORY>
+             <JAR>lib/aduna-commons-collections.jar</JAR>
+             <JAR>lib/aduna-commons-concurrent.jar</JAR>
+             <JAR>lib/aduna-commons-i18n.jar</JAR>
+             <JAR>lib/aduna-commons-io.jar</JAR>
+             <JAR>lib/aduna-commons-iteration.jar</JAR>
+             <JAR>lib/aduna-commons-lang.jar</JAR>
+             <JAR>lib/aduna-commons-net.jar</JAR>
+             <JAR>lib/aduna-commons-text.jar</JAR>
+             <JAR>lib/aduna-commons-xml.jar</JAR>
+             <JAR>lib/commons-cli.jar</JAR>
+             <JAR>lib/commons-codec.jar</JAR>
+             <JAR>lib/commons-collections.jar</JAR>
+             <JAR>lib/commons-httpclient.jar</JAR>
+             <JAR>lib/commons-io.jar</JAR>
+             <JAR>lib/commons-lang.jar</JAR>
+             <JAR>lib/kim-api.jar</JAR>
+             <JAR>lib/kim-util.jar</JAR>
+             <JAR>lib/sesame-http-client.jar</JAR>
+             <JAR>lib/sesame-http-protocol.jar</JAR>
+             <JAR>lib/sesame-model.jar</JAR>
+             <JAR>lib/sesame-query.jar</JAR>
+             <JAR>lib/sesame-queryalgebra-evaluation.jar</JAR>
+             <JAR>lib/sesame-queryalgebra-model.jar</JAR>
+             <JAR>lib/sesame-queryparser-api.jar</JAR>
+             <JAR>lib/sesame-queryparser-serql.jar</JAR>
+             <JAR>lib/sesame-queryparser-sparql.jar</JAR>
+             <JAR>lib/sesame-queryresultio-api.jar</JAR>
+             <JAR>lib/sesame-queryresultio-binary.jar</JAR>
+             <JAR>lib/sesame-queryresultio-sparqljson.jar</JAR>
+             <JAR>lib/sesame-queryresultio-sparqlxml.jar</JAR>
+             <JAR>lib/sesame-queryresultio-text.jar</JAR>
+             <JAR>lib/sesame-repository-api.jar</JAR>
+             <JAR>lib/sesame-repository-http.jar</JAR>
+             <JAR>lib/sesame-repository-sail.jar</JAR>
+             <JAR>lib/sesame-rio-api.jar</JAR>
+             <JAR>lib/sesame-rio-ntriples.jar</JAR>
+             <JAR>lib/sesame-rio-rdfxml.jar</JAR>
+             <JAR>lib/sesame-rio-turtle.jar</JAR>
+             <JAR>lib/sesame-sail-api.jar</JAR>
+             <JAR>lib/sesame-sail-inferencer.jar</JAR>
+             <JAR>lib/sesame-sail-memory.jar</JAR>
+             <JAR>lib/slf4j-api.jar</JAR>
+             <JAR>lib/slf4j-log4j12.jar</JAR>
+             <JAR>lib/trove.jar</JAR>		
+             <JAR>lib/owlim-3.0-beta12.jar</JAR>		
+             <JAR>lib/trree-3.0-beta12.jar</JAR>		
+
+ <CREOLE>
+
+    <!-- The large knowledge base gazetteer allows loading huge collections of identifiers and labels and using them for gazetteer lookup.
+                This gazetteer loads a pregenerated binary image of a such collection. The image is generated from RDF datasets using an
+                external tool suplied with the CREOLE plugin. See readme.txt	
+                This PR is not compatible with the older openrdf jars which appear by default in the lib folder of GATE 5.0 and thus with all components that 
+                depend on them like the Ontology LR or the OntoRootGazetteer. Remove the openrdf jars and don't load those plugins to take advantage 
+	      of this PR. This issue will be corrected in GATE 5.1	-->
+    <RESOURCE>
+	  <JAR>lkb-gazetteer.jar</JAR>  
+      <NAME>Large KB Gazetteer</NAME>
+      <CLASS>com.ontotext.kim.gate.KimGazetteer</CLASS>
+      <comment>KIM KB based alias-lookup commponent</comment>
+      <PARAMETER NAME="document" RUNTIME="true"
+        COMMENT="The document to be processed">gate.Document</PARAMETER>
+      <PARAMETER NAME="annotationSetName" RUNTIME="true"
+        COMMENT="The annotation set to be used for the generated annotations"
+        OPTIONAL="true">java.lang.String</PARAMETER>
+		
+		
+	  <!-- Setting limit of the number of the created annotations 
+	           will reduce the memory consumption of GATE on large documents.
+		 Note that GATE documents consume gigabytes of memory if there are tens of thousands
+		 of annotations in the document. All PRs that create large number of 
+		 annotations like the gazetteers and tokenizers may cause an Out Of Memory error
+		 on large texts. Setting that options limits the amount of memory that the gazetteer will use. -->
+      <PARAMETER NAME="annotationLimit" RUNTIME="true"
+        COMMENT="
+		The maximum number of the generated annotations. NULL or 0 for no limit. 		
+		See the comments in the creole.xml for more information."
+		OPTIONAL="true">java.lang.Integer</PARAMETER>
+	
+	
+      <PARAMETER NAME="dictionaryPath" RUNTIME="false"
+        COMMENT="Path where the gazetteer dictionary is stored."
+		OPTIONAL="false">java.net.URL</PARAMETER>
+		
+      <PARAMETER NAME="forceCaseSensitive" RUNTIME="false"
+        COMMENT="Whether the gazeteer should return case-sensitive matches regardless of the loaded dictionary."
+		OPTIONAL="true">java.lang.Boolean</PARAMETER>		
+		
+	</RESOURCE>
+
+    <!-- The Semantic Enrichment PR allows adding new data to semantic annotations by querying external RDF (Linked Data) repositories.
+	
+	       Here a semantic annotation is an annotation that is linked to an RDF entity by having the URI of the entity in the 
+	       "inst" feature of the annotation. For all such annotation of a given type, this PR runs a SPARQL query against
+	       the defined repository and puts a comma-separated list of the values mentioned in the query output in the 
+	       "connections"	feature of the same annotation.
+
+                This PR is not compatible with the older openrdf jars which appear by default in the lib folder of GATE 5.0 and thus with all components that 
+                depend on them like the Ontology LR or the OntoRootGazetteer. Remove the openrdf jars and don't load those plugins to take advantage 
+	      of this PR. This issue will be corrected in GATE 5.1	-->	
+    <RESOURCE>
+		<JAR>lkb-gazetteer.jar</JAR> 
+      <NAME>Semantic Annotation Enrichment</NAME>
+      <CLASS>com.ontotext.kim.gate.SesameEnrichment</CLASS>
+      <comment>Free SPARQL enrichment of Semantic Annotations using a Sesame HTTP Server</comment>
+      <PARAMETER NAME="document" RUNTIME="true"
+        COMMENT="The document to be processed">gate.Document</PARAMETER>
+		
+      <PARAMETER NAME="inputASName" RUNTIME="true"
+        COMMENT="The input annotation set"
+        OPTIONAL="true">java.lang.String</PARAMETER>
+		
+      <PARAMETER NAME="server" RUNTIME="false"
+        COMMENT="The URL of the Sesame 2 HTTP repository. Support for generic SPARQL endpoints can be implemented if required."
+		OPTIONAL="true" DEFAULT="http://ldsr.ontotext.com/openrdf-sesame/">java.lang.String</PARAMETER>
+	
+      <PARAMETER NAME="repositoryId" RUNTIME="false"
+        COMMENT="The ID of the sesame repository"
+	OPTIONAL="true" DEFAULT="owlim">java.lang.String</PARAMETER>	
+	
+	  <PARAMETER NAME="annotationTypes"
+				RUNTIME="true"
+				COMMENT="Types of annotations that will be enriched."
+				OPTIONAL="true">java.util.List</PARAMETER>
+				
+      <PARAMETER NAME="query" RUNTIME="true"
+        COMMENT="The sparql query pattern. The query will be processed like this - String.format(query, uriFromAnnotation), 
+		so you can use parameters like %s or %1$s " OPTIONAL="true">java.lang.String</PARAMETER>
+		
+	  <PARAMETER NAME="deleteOnNoRelations" RUNTIME="true"
+        COMMENT="Whether we want to delete the annotation that weren't encriched." OPTIONAL="true">java.lang.Boolean</PARAMETER>
+		
+	  <PARAMETER NAME="version" RUNTIME="false"
+        COMMENT="Version. Read-only." OPTIONAL="true" DEFAULT="loaded from jar manifest">java.lang.String</PARAMETER>		
+    </RESOURCE>
+    
+  </CREOLE>
+
+</CREOLE-DIRECTORY>

@@ -1,0 +1,572 @@
+<gate.util.persistence.GateApplication>
+  <urlList class="gate.util.persistence.CollectionPersistence">
+    <localList>
+      <gate.util.persistence.PersistenceManager-URLHolder>
+        <urlString>$relpath$../../../lkb_gazetteer</urlString>
+      </gate.util.persistence.PersistenceManager-URLHolder>
+      <gate.util.persistence.PersistenceManager-URLHolder>
+        <urlString>$relpath$../../../ANNIE</urlString>
+      </gate.util.persistence.PersistenceManager-URLHolder>
+    </localList>
+    <collectionType>java.util.ArrayList</collectionType>
+  </urlList>
+  <application class="gate.util.persistence.SerialAnalyserControllerPersistence">
+    <corpus class="gate.util.persistence.CorpusPersistence">
+      <docList>
+        <gate.util.persistence.LRPersistence>
+          <resourceType>gate.corpora.DocumentImpl</resourceType>
+          <resourceName>Wikipedia - Natural_language_processing</resourceName>
+          <initParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>markupAware</string>
+                <boolean>true</boolean>
+              </entry>
+              <entry>
+                <string>stringContent</string>
+                <string>Natural language processing - Wikipedia, the free encyclopedia
+
+Natural language processing
+From Wikipedia, the free encyclopedia
+Jump to: navigation , search
+This article or section has multiple issues. Please help improve the article or discuss these issues on the talk page .
+It needs additional references or sources for verification . Tagged since July 2008.
+
+It may need reorganization to meet Wikipedia&apos;s quality standards . Tagged since July 2008.
+
+
+It has been suggested that natural language understanding be merged into this article or section. ( Discuss )
+
+Natural language processing ( NLP ) is a field of computer science and linguistics concerned with the interactions between computers and human (natural) languages. Natural language generation systems convert information from computer databases into readable human language. Natural language understanding systems convert samples of human language into more formal representations such as parse trees or first order logic that are easier for computer programs to manipulate. Many problems within NLP apply to both generation and understanding; for example, a computer must be able to model morphology (the structure of words) in order to understand an English sentence, and a model of morphology is also needed for producing a grammatically correct English sentence.
+
+NLP has significant overlap with the field of computational linguistics , and is often considered a sub-field of artificial intelligence . The term natural language is used to distinguish human languages (such as Spanish, Swahili or Swedish) from formal or computer languages (such as C++, Java or LISP). [ 1 ] Although NLP may encompass both text and speech, work on speech processing has evolved into a separate field.
+Contents
+1 Tasks and limitations
+2 Subproblems
+3 Statistical NLP
+4 Major tasks in NLP
+5 Concrete problems
+6 Evaluation of natural language processing 6.1 Objectives
+6.2 Short history of evaluation in NLP
+6.3 Different types of evaluation
+6.4 Shared tasks (Campaigns)
+
+7 Standardization in NLP
+8 Journals
+9 Organizations and conferences 9.1 Associations
+9.2 Conferences
+
+10 Software tools
+11 See also
+12 References 12.1 Related academic articles
+
+13 External links 13.1 Resources
+13.2 Organizations
+
+
+[ edit ] Tasks and limitations
+
+In theory, natural-language processing is a very attractive method of human-computer interaction . Early systems such as SHRDLU , working in restricted &quot; blocks worlds &quot; with restricted vocabularies, worked extremely well, leading researchers to excessive optimism, which was soon lost when the systems were extended to more realistic situations with real-world ambiguity and complexity .
+
+Natural-language understanding is sometimes referred to as an AI-complete problem, because natural-language recognition seems to require extensive knowledge about the outside world and the ability to manipulate it. The definition of &quot; understanding &quot; is one of the major problems in natural-language processing.
+[ edit ] Subproblems
+Speech segmentation In most spoken languages, the sounds representing successive letters blend into each other, so the conversion of the analog signal to discrete characters can be a very difficult process. Also, in natural speech there are hardly any pauses between successive words; the location of those boundaries usually must take into account grammatical and semantic constraints, as well as the context . Text segmentation Some written languages like Chinese , Japanese and Thai do not have single-word boundaries either, so any significant text parsing usually requires the identification of word boundaries, which is often a non-trivial task. Part-of-speech tagging Word sense disambiguation Many words have more than one meaning ; we have to select the meaning which makes the most sense in context. Syntactic ambiguity The grammar for natural languages is ambiguous , i.e. there are often multiple possible parse trees for a given sentence. Choosing the most appropriate one usually requires semantic and contextual information. Specific problem components of syntactic ambiguity include sentence boundary disambiguation . Imperfect or irregular input� Foreign or regional accents and vocal impediments in speech; typing or grammatical errors, OCR errors in texts. Speech acts and plans A sentence can often be considered an action by the speaker. The sentence structure alone may not contain enough information to define this action. For instance, a question is actually the speaker requesting some sort of response from the listener. The desired response may be verbal, physical, or some combination. For example, &quot;Can you pass the class?&quot; is a request for a simple yes-or-no answer, while &quot;Can you pass the salt?&quot; is requesting a physical action to be performed. It is not appropriate to respond with &quot;Yes, I can pass the salt,&quot; without the accompanying action (although &quot;No&quot; or &quot;I can&apos;t reach the salt&quot; would explain a lack of action). [ edit ] Statistical NLP
+Main article: statistical natural language processing
+
+Statistical natural-language processing uses stochastic , probabilistic and statistical methods to resolve some of the difficulties discussed above, especially those which arise because longer sentences are highly ambiguous when processed with realistic grammars, yielding thousands or millions of possible analyses. Methods for disambiguation often involve the use of corpora and Markov models . Statistical NLP comprises all quantitative approaches to automated language processing , including probabilistic modeling, information theory , and linear algebra [ 2 ] . The technology for statistical NLP comes mainly from machine learning and data mining , both of which are fields of artificial intelligence that involve learning from data.
+[ edit ] Major tasks in NLP
+Automatic summarization
+Foreign language reading aid
+Foreign language writing aid
+Information extraction
+Information retrieval (IR) - IR is concerned with storing, searching and retrieving information. It is a separate field within computer science (closer to databases), but IR relies on some NLP methods (for example, stemming). Some current research and applications seek to bridge the gap between IR and NLP.
+Machine translation - Automatically translating from one human language to another.
+Named entity recognition (NER) - Given a stream of text, determining which items in the text map to proper names, such as people or places. Although in English, named entities are marked with capitalized words, many other languages do not use capitalization to distinguish named entities.
+Natural language generation
+Natural language search
+Natural language understanding
+Optical character recognition
+anaphora resolution
+Query expansion
+Question answering - Given a human language question, the task of producing a human-language answer. The question may be a closed-ended (such as &quot;What is the capital of Canada?&quot;) or open-ended (such as &quot;What is the meaning of life?&quot;).
+Speech recognition - Given a sound clip of a person or people speaking, the task of producing a text dictation of the speaker(s). (The opposite of text to speech.)
+Spoken dialogue system
+Stemming
+Text simplification
+Text-to-speech
+Text-proofing
+[ edit ] Concrete problems
+See also: Garden path sentence
+
+Some examples of the problems faced by natural-language-understanding systems:
+The sentences &quot; We gave the monkeys the bananas because they were hungry &quot; and &quot; We gave the monkeys the bananas because they were over-ripe &quot; have the same surface grammatical structure. However, the pronoun they refers to monkeys in one sentence and bananas in the other, and it is impossible to tell which without a knowledge of the properties of monkeys and bananas.
+An early AI goal was to give a computer the ability to parse natural language sentences into the type of sentence diagrams that grade-school children learn. One of the first such systems, developed in 1963 by Susumu Kuno of Harvard, was interesting in its revelation of the depth of ambiguity in the English language. Kuno asked his computerized parser what the sentence &quot;Time flies like an arrow&quot; means. In what has become a famous response [ 3 ] , the computer replied that it was not quite sure. It might mean; The common simile : time moves quickly just like an arrow does ;
+measure the speed of flies like you would measure that of an arrow (&apos;time&apos; being an imperative verb and &apos;flies&apos; being the insects) - i.e. (You should) time flies as you would (time) an arrow ;
+measure the speed of flies like an arrow would - i.e. Time flies in the same way that an arrow would (time them) ;
+measure the speed of flies that are like arrows - i.e. Time those flies that are like arrows ;
+all of a type of flying insect, &quot;time-flies,&quot; collectively enjoys a single arrow (compare Fruit flies like a banana );
+each of a type of flying insect, &quot;time-flies,&quot; individually enjoys a different arrow (similar comparison applies);
+A concrete object, for example the magazine, Time , travels through the air in an arrow-like manner.
+
+English is particularly challenging in this regard because it has little inflectional morphology to distinguish between parts of speech .
+English and several other languages don&apos;t specify which word an adjective applies to. For example, in the string &quot;pretty little girls&apos; school&quot;. Does the school look little?
+Do the girls look little?
+Do the girls look pretty?
+Does the school look pretty?
+
+We will often imply additional information in spoken language by the way we place stress on words. The sentence &quot;I never said she stole my money&quot; demonstrates the importance stress can play in a sentence, and thus the inherent difficulty a natural language processor can have in parsing it. Depending on which word the speaker places the stress, this sentence could have several distinct meanings: &quot; I never said she stole my money&quot; - Someone else said it, but I didn&apos;t.
+&quot;I never said she stole my money&quot; - I simply didn&apos;t ever say it.
+&quot;I never said she stole my money&quot; - I might have implied it in some way, but I never explicitly said it.
+&quot;I never said she stole my money&quot; - I said someone took it; I didn&apos;t say it was she.
+&quot;I never said she stole my money&quot; - I just said she probably borrowed it.
+&quot;I never said she stole my money&quot; - I said she stole someone else&apos;s money.
+&quot;I never said she stole my money &quot; - I said she stole something of mine, but not my money.
+
+[ edit ] Evaluation of natural language processing
+[ edit ] Objectives
+
+The goal of NLP evaluation is to measure one or more qualities of an algorithm or a system, in order to determine whether (or to what extent) the system answers the goals of its designers, or meets the needs of its users. Research in NLP evaluation has received considerable attention, because the definition of proper evaluation criteria is one way to specify precisely an NLP problem, going thus beyond the vagueness of tasks defined only as language understanding or language generation. A precise set of evaluation criteria, which includes mainly evaluation data and evaluation metrics, enables several teams to compare their solutions to a given NLP problem.
+[ edit ] Short history of evaluation in NLP
+
+The first evaluation campaign on written texts seems to be a campaign dedicated to message understanding in 1987 (Pallet 1998). Then, the Parseval/GEIG project compared phrase-structure grammars (Black 1991). A series of campaigns within Tipster project were realized on tasks like summarization, translation and searching (Hirshman 1998). In 1994, in Germany, the Morpholympics compared German taggers. Then, the Senseval and Romanseval campaigns were conducted with the objectives of semantic disambiguation. In 1996, the Sparkle campaign compared syntactic parsers in four different languages (English, French, German and Italian). In France, the Grace project compared a set of 21 taggers for French in 1997 (Adda 1999). In 2004, during the Technolangue/Easy project, 13 parsers for French were compared. Large-scale evaluation of dependency parsers were performed in the context of the CoNLL shared tasks in 2006 and 2007. In Italy, the evalita campaign was conducted in 2007 to compare various tools for Italian evalita web site . In France, within the ANR-Passage project (end of 2007), 10 parsers for French were compared passage web site .
+
+Adda G., Mariani J., Paroubek P., Rajman M. 1999 L&apos;action GRACE d&apos;évaluation de l&apos;assignation des parties du discours pour le français. Langues vol-2
+Black E., Abney S., Flickinger D., Gdaniec C., Grishman R., Harrison P., Hindle D., Ingria R., Jelinek F., Klavans J., Liberman M., Marcus M., Reukos S., Santoni B., Strzalkowski T. 1991 A procedure for quantitatively comparing the syntactic coverage of English grammars. DARPA Speech and Natural Language Workshop
+Hirshman L. 1998 Language understanding evaluation: lessons learned from MUC and ATIS. LREC Granada
+Pallet D.S. 1998 The NIST role in automatic speech recognition benchmark tests. LREC Granada
+[ edit ] Different types of evaluation
+
+Depending on the evaluation procedures, a number of distinctions are traditionally made in NLP evaluation.
+Intrinsic vs. extrinsic evaluation
+
+Intrinsic evaluation considers an isolated NLP system and characterizes its performance mainly with respect to a gold standard result, pre-defined by the evaluators. Extrinsic evaluation, also called evaluation in use considers the NLP system in a more complex setting, either as an embedded system or serving a precise function for a human user. The extrinsic performance of the system is then characterized in terms of its utility with respect to the overall task of the complex system or the human user. For example, consider a syntactic parser that is based on the output of some new part of speech (POS) tagger. An intrinsic evaluation would run the POS tagger on some labelled data, and compare the system output of the POS tagger to the gold standard (correct) output. An extrinsic evaluation would run the parser with some other POS tagger, and then with the new POS tagger, and compare the parsing accuracy.
+Black-box vs. glass-box evaluation
+
+Black-box evaluation requires one to run an NLP system on a given data set and to measure a number of parameters related to the quality of the process (speed, reliability, resource consumption) and, most importantly, to the quality of the result (e.g. the accuracy of data annotation or the fidelity of a translation). Glass-box evaluation looks at the design of the system, the algorithms that are implemented, the linguistic resources it uses (e.g. vocabulary size), etc. Given the complexity of NLP problems, it is often difficult to predict performance only on the basis of glass-box evaluation, but this type of evaluation is more informative with respect to error analysis or future developments of a system.
+Automatic vs. manual evaluation
+
+In many cases, automatic procedures can be defined to evaluate an NLP system by comparing its output with the gold standard (or desired) one. Although the cost of producing the gold standard can be quite high, automatic evaluation can be repeated as often as needed without much additional costs (on the same input data). However, for many NLP problems, the definition of a gold standard is a complex task, and can prove impossible when inter-annotator agreement is insufficient. Manual evaluation is performed by human judges, which are instructed to estimate the quality of a system, or most often of a sample of its output, based on a number of criteria. Although, thanks to their linguistic competence, human judges can be considered as the reference for a number of language processing tasks, there is also considerable variation across their ratings. This is why automatic evaluation is sometimes referred to as objective evaluation, while the human kind appears to be more subjective.
+[ edit ] Shared tasks (Campaigns)
+BioCreative
+Message Understanding Conference
+Technolangue/Easy
+Text Retrieval Conference
+[ edit ] Standardization in NLP
+
+An ISO sub-committee is working in order to ease interoperability between Lexical resources and NLP programs. The sub-committee is part of ISO/TC37 and is called ISO/TC37/SC4. Some ISO standards are already published but most of them are under construction, mainly on lexicon representation (see LMF ), annotation and data category registry.
+[ edit ] Journals
+Computational Linguistics
+Language Resources and Evaluation
+Linguistic Issues in Language Technology
+[ edit ] Organizations and conferences
+[ edit ] Associations
+Association for Computational Linguistics
+Association for Machine Translation in the Americas
+AFNLP - Asian Federation of Natural Language Processing Associations
+Australasian Language Technology Association (ALTA)
+[ edit ] Conferences
+Language Resources and Evaluation
+[ edit ] Software tools
+Main article: Natural language processing toolkits
+AlchemyAPI
+Expert System S.p.A.
+General Architecture for Text Engineering (GATE)
+Modular Audio Recognition Framework
+MontyLingua
+Natural Language Toolkit (NLTK): a Python library suite
+[ edit ] See also
+Biomedical text mining
+Chatterbot
+Compound term processing
+Computational linguistics
+Computer-assisted reviewing
+Controlled natural language
+Information retrieval
+Language technology
+Latent semantic indexing
+Lexical Markup Framework
+Loglan / Lojban
+Natural language generation
+Natural language understanding
+Transderivational search
+Reification (linguistics)
+Speech recognition
+[ edit ] References
+^ Charniak, Eugene: Introduction to artificial intelligence , page 2. Addison-Wesley, 1984.
+^ Christopher D. Manning, Hinrich Schütze: Foundations of Statistical Natural Language Processing , MIT Press (1999), ISBN 978-0262133609 , p. xxxi
+^ http://www.kurzweilai.net/articles/art0311.html?printable=1
+[ edit ] Related academic articles
+Bates, M. (1995). Models of natural language understanding. Proceedings of the National Academy of Sciences of the United States of America, Vol. 92, No. 22 (Oct. 24, 1995), pp. 9977-9982.
+[ edit ] External links
+[ edit ] Resources
+Computational Linguistics Publications
+Computational Linguistics Resources
+Resources for Text, Speech and Language Processing
+A comprehensive list of resources, classified by category
+CICLing annual conferences on Intelligent Text Processing and Computational Linguistics
+Computation Linguistics: Models, Resources, Applications (online text)
+Language Technology Documentation Centre in Finland (FiLT)
+Some simple examples of NLP-hard utterances.
+[ edit ] Organizations
+The Stanford Natural Language Processing Group
+The Cognitive Computation Group
+NLP group of CIC-IPN; many publications available online
+CLaC -- Computation Linguistics at Concordia , Concordia University
+Retrieved from &quot; http://en.wikipedia.org/wiki/Natural_language_processing &quot;
+Categories : Computational linguistics | Speech recognition | Natural language processing
+Hidden categories: Articles lacking reliable references from July 2008 | Wikipedia articles needing reorganization | Articles to be merged from July 2008 | All articles to be merged
+Views
+Article
+Discussion
+Edit this page
+History
+Personal tools
+Try Beta
+Log in / create account
+Navigation
+Main page
+Contents
+Featured content
+Current events
+Random article
+Search
+�
+Interaction
+About Wikipedia
+Community portal
+Recent changes
+Contact Wikipedia
+Donate to Wikipedia
+Help
+Toolbox
+What links here
+Related changes
+Upload file
+Special pages
+Printable version
+Permanent link
+Cite this page
+Languages
+العربية
+Bân-lâm-gú
+Беларуская
+Беларуская (тарашкевіца)
+Български
+Català
+Česky
+Dansk
+Deutsch
+Español
+Euskara
+فارسی
+Français
+Galego
+한국어
+Italiano
+עברית
+Lietuvių
+日本語
+Polski
+Português
+Română
+Русский
+Simple English
+Српски / Srpski
+தமிழ்
+ไทย
+Türkçe
+Українська
+中文
+This page was last modified on 10 October 2009 at 12:43.
+Text is available under the Creative Commons Attribution-ShareAlike License ; additional terms may apply. See Terms of Use for details.
+Wikipedia� is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization.
+Privacy policy
+About Wikipedia
+Disclaimers
+</string>
+              </entry>
+              <entry>
+                <string>encoding</string>
+                <string>windows-1251</string>
+              </entry>
+              <entry>
+                <string>sourceUrlStartOffset</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>preserveOriginalContent</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>collectRepositioningInfo</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>sourceUrl</string>
+                <gate.util.persistence.PersistenceManager-URLHolder>
+                  <urlString>http://en.wikipedia.org/wiki/Natural_language_processing</urlString>
+                </gate.util.persistence.PersistenceManager-URLHolder>
+              </entry>
+              <entry>
+                <string>mimeType</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>sourceUrlEndOffset</string>
+                <null/>
+              </entry>
+            </localMap>
+          </initParams>
+        </gate.util.persistence.LRPersistence>
+        <gate.util.persistence.LRPersistence>
+          <resourceType>gate.corpora.DocumentImpl</resourceType>
+          <resourceName>Wikipedia: GATE</resourceName>
+          <initParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>markupAware</string>
+                <boolean>true</boolean>
+              </entry>
+              <entry>
+                <string>stringContent</string>
+                <string>General Architecture for Text Engineering - Wikipedia, the free encyclopedia
+
+General Architecture for Text Engineering
+From Wikipedia, the free encyclopedia
+Jump to: navigation , search
+This article may not meet the general notability guideline . Please help to establish notability by adding reliable, secondary sources about the topic. If notability cannot be established, the article is likely to be merged or deleted . ( October 2009 )
+GATE
+GATE 5 main window
+Developer(s) GATE research team , Dept. Computer Science, University of Sheffield
+Initial release 1996
+Stable release 5.0 � ( 2007 - 05-29 ) [ +/− ]
+Preview release 5.1 � (nigthly builds released everyday) [ +/− ]
+Written in Java
+Operating system Cross-platform
+Available in English
+Type Text mining Information Extraction
+License LGPL
+Website http://gate.ac.uk/
+
+General Architecture for Text Engineering or GATE is a Java software toolkit originally developed at the University of Sheffield beginning in 1995 and now used worldwide by a wide community of scientists, companies, teachers and students for all sorts of natural language processing tasks, including information extraction in many languages.
+
+GATE comprises an architecture, a free open source API, framework and graphical development environment.
+
+GATE community and research is involved in several European research projects including TAO and SEKT .
+Contents
+1 Features
+2 Description of the graphical user interface
+3 References
+4 See also
+
+[ edit ] Features
+
+GATE includes an information extraction system called ANNIE (A Nearly-New Information Extraction System) which is a set of modules comprising a tokenizer , a gazetteer , a sentence splitter , a part of speech tagger , a named entities transducer and a coreference tagger.
+
+Languages currently handled in GATE include English, Spanish, Chinese, Arabic, French, German, Hindi, Italian, Cebuano, Romanian, Russian.
+
+There is a large set of plugins for machine learning with Weka , RASP, MAXENT, SVM Light, for managing Ontologies like WordNet , for querying search engines like Google or Yahoo , for part of speech tagging with Brill or TreeTager, and many more.
+
+GATE can handle input in various formats, such as TXT , HTML , XML , Doc , PDF documents, and Java Serial , PostgreSQL , Lucene , Oracle Databases with help of RDBMS storage over JDBC .
+
+It also uses the JAPE (Java Annotation Patterns Engine) language for building rules in order to annotate documents with tags. A debugger, corpus benchmark and annotations comparator tools are also present.
+[ edit ] Description of the graphical user interface
+GATE 5 main window.
+
+The GATE main GUI consist of a top menu and row of icons, a left vertical resources tree, a central-right tabbed pane of the resource viewers and a message field at the bottom.
+
+The resources tree and the menu are use to load, save and run resources. The resources tree display the loaded resources and allows to show a resource in a resource viewer by double-clicking on it or pressing Enter key.
+
+Each loaded resource can be displayed in a specific resource viewer that take most of the space in the GUI.
+
+Here you can see the document viewer use to display a document and its annotations. In pink are &lt;A&gt; hyperlink annotations from an HTML file. The right list is the annotation sets list and the bottom table is the annotation list. In the center is the annotation editor window.
+[ edit ] References
+GATE website at University of Sheffield Natural Language Processing Group
+[ edit ] See also
+Free software portal
+Unstructured Information Management Architecture (UIMA)
+Retrieved from &quot; http://en.wikipedia.org/wiki/General_Architecture_for_Text_Engineering &quot;
+Categories : SourceForge projects | Natural language processing toolkits | Free development toolkits and libraries | Free science software | Free software programmed in Java | Open source integrated development environments | Free cross-platform software | Knowledge representation | Machine learning | Natural language processing | Data mining | Ontology (computer science) | Ontology editors
+Hidden categories: Articles with topics of unclear notability from October 2009
+Views
+Article
+Discussion
+Edit this page
+History
+Personal tools
+Try Beta
+Log in / create account
+Navigation
+Main page
+Contents
+Featured content
+Current events
+Random article
+Search
+�
+Interaction
+About Wikipedia
+Community portal
+Recent changes
+Contact Wikipedia
+Donate to Wikipedia
+Help
+Toolbox
+What links here
+Related changes
+Upload file
+Special pages
+Printable version
+Permanent link
+Cite this page
+This page was last modified on 11 October 2009 at 04:08.
+Text is available under the Creative Commons Attribution-ShareAlike License ; additional terms may apply. See Terms of Use for details.
+Wikipedia� is a registered trademark of the Wikimedia Foundation, Inc. , a non-profit organization.
+Privacy policy
+About Wikipedia
+Disclaimers
+</string>
+              </entry>
+              <entry>
+                <string>encoding</string>
+                <string>windows-1251</string>
+              </entry>
+              <entry>
+                <string>sourceUrlStartOffset</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>preserveOriginalContent</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>collectRepositioningInfo</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>sourceUrl</string>
+                <gate.util.persistence.PersistenceManager-URLHolder>
+                  <urlString>http://en.wikipedia.org/wiki/General_Architecture_for_Text_Engineering</urlString>
+                </gate.util.persistence.PersistenceManager-URLHolder>
+              </entry>
+              <entry>
+                <string>mimeType</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>sourceUrlEndOffset</string>
+                <null/>
+              </entry>
+            </localMap>
+          </initParams>
+        </gate.util.persistence.LRPersistence>
+      </docList>
+      <resourceType>gate.corpora.CorpusImpl</resourceType>
+      <resourceName>Small Corpus</resourceName>
+      <initParams class="gate.util.persistence.MapPersistence">
+        <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+        <localMap>
+          <entry>
+            <string>documentsList</string>
+            <gate.util.persistence.CollectionPersistence>
+              <localList>
+                <gate.util.persistence.LRPersistence reference="../../../../../../docList/gate.util.persistence.LRPersistence"/>
+              </localList>
+              <collectionType>java.util.ArrayList</collectionType>
+            </gate.util.persistence.CollectionPersistence>
+          </entry>
+        </localMap>
+      </initParams>
+    </corpus>
+    <prList class="gate.util.persistence.CollectionPersistence">
+      <localList>
+        <gate.util.persistence.PRPersistence>
+          <runtimeParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>setsToKeep</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>document</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>annotationTypes</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>keepOriginalMarkupsAS</string>
+                <boolean>true</boolean>
+              </entry>
+            </localMap>
+          </runtimeParams>
+          <resourceType>gate.creole.annotdelete.AnnotationDeletePR</resourceType>
+          <resourceName>Document Reset</resourceName>
+          <initParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap/>
+          </initParams>
+          <features class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap/>
+          </features>
+        </gate.util.persistence.PRPersistence>
+        <gate.util.persistence.LanguageAnalyserPersistence>
+          <runtimeParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>annotationSetName</string>
+                <null/>
+              </entry>
+              <entry>
+                <string>annotationLimit</string>
+                <int>0</int>
+              </entry>
+              <entry>
+                <string>document</string>
+                <null/>
+              </entry>
+            </localMap>
+          </runtimeParams>
+          <resourceType>com.ontotext.kim.gate.KimGazetteer</resourceType>
+          <resourceName>Small Ontology Gazetteer</resourceName>
+          <initParams class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap>
+              <entry>
+                <string>forceCaseSensitive</string>
+                <boolean>false</boolean>
+              </entry>
+              <entry>
+                <string>dictionaryPath</string>
+                <gate.util.persistence.PersistenceManager-URLHolder>
+                  <urlString>$relpath$../dictionary_from_local_ontology</urlString>
+                </gate.util.persistence.PersistenceManager-URLHolder>
+              </entry>
+            </localMap>
+          </initParams>
+          <features class="gate.util.persistence.MapPersistence">
+            <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+            <localMap/>
+          </features>
+        </gate.util.persistence.LanguageAnalyserPersistence>
+      </localList>
+      <collectionType>java.util.ArrayList</collectionType>
+    </prList>
+    <resourceType>gate.creole.SerialAnalyserController</resourceType>
+    <resourceName>Sample Pipeline</resourceName>
+    <initParams class="gate.util.persistence.MapPersistence">
+      <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+      <localMap/>
+    </initParams>
+    <features class="gate.util.persistence.MapPersistence">
+      <mapType>gate.util.SimpleFeatureMapImpl</mapType>
+      <localMap/>
+    </features>
+  </application>
+</gate.util.persistence.GateApplication>

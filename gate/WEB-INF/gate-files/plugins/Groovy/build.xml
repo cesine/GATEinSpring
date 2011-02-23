@@ -1,0 +1,109 @@
+<project name="groovy" default="dist" basedir=".">
+    <description>
+        A plugin for Groovy integration
+    </description>
+
+  <!-- Prevent Ant from warning about includeantruntime not being set -->
+  <property name="build.sysclasspath" value="ignore" />
+
+  <!-- set global properties for this build -->
+  <property name="src" location="src"/>
+  <property name="build" location="build"/>
+  <property name="dist"  location="dist"/>
+  <property name="jar.location" location="groovy-gate.jar" />
+  <property name="doc.dir" location="doc" />
+  <property name="javadoc.dir" location="${doc.dir}/javadoc" />
+
+  <property name="gate.home" location="../.." />
+  <property name="gate.jar" location="${gate.home}/bin/gate.jar" />
+  <property name="gate.lib" location="${gate.home}/lib" />
+
+  <taskdef name="groovyc" classname="org.codehaus.groovy.ant.Groovyc">
+    <classpath>
+      <fileset dir="lib" includes="groovy-all*.jar"/>
+    </classpath>
+  </taskdef>
+
+
+  <path id="classpath">
+    <pathelement location="${gate.jar}" />
+    <fileset dir="${gate.lib}">
+      <include name="**/*.jar" />
+      <include name="**/*.zip" />
+    </fileset>
+    <fileset dir="lib"> 
+      <include name="*.jar"/>
+    </fileset>
+  </path> 
+
+
+  <target name="init">
+    <!-- Create the time stamp -->
+    <tstamp/>
+    <!-- Create the build directory structure used by compile -->
+    <mkdir dir="${build}"/>
+  </target>
+
+  <target name="compile" depends="init"
+        description="compile the source " >
+    <!-- Compile the java and Groovy code from ${src} into ${build} -->
+    <groovyc srcdir="${src}" destdir="${build}">
+      <classpath refid="classpath"/> 
+      <javac debug="true" debuglevel="lines,source" source="1.5" target="1.5" />
+    </groovyc>
+  </target>
+
+  <target name="copy.resources" depends="init"
+        description="Copy non-source files from src to build">
+    <copy todir="${build}">
+      <fileset dir="${src}" excludes="**/*.java, **/*.groovy" />
+    </copy>
+  </target>
+
+  <!-- Build JavaDoc documentation -->
+  <target name="doc.prepare">
+    <mkdir dir="${javadoc.dir}" />
+  </target>
+
+  <target name="javadoc" depends="doc.prepare">
+    <javadoc destdir="${javadoc.dir}" packagenames="*"
+             classpathref="classpath"
+             encoding="UTF-8"
+             windowtitle="${plugin.name} JavaDoc"
+             source="1.5">
+      <sourcepath>
+        <pathelement location="${src}" />
+      </sourcepath>
+      <link href="http://java.sun.com/j2se/1.5.0/docs/api/" />
+      <link href="http://gate.ac.uk/gate/doc/javadoc/" />
+    </javadoc>
+  </target>
+
+
+  <target name="dist" depends="compile, copy.resources"
+        description="generate the distribution" >
+    <!-- Create the distribution directory -->
+    <mkdir dir="${dist}/lib"/>
+
+    <!-- Put everything in ${build} into the MyProject-${DSTAMP}.jar file -->
+    <jar jarfile="${jar.location}" basedir="${build}"/>
+  </target>
+
+  <target name="clean.classes"
+        description="clean up" >
+    <!-- Delete the ${build} and ${dist} directory trees -->
+    <delete dir="${build}"/>
+    <delete dir="${dist}"/>
+  </target>
+
+  <target name="clean" depends="clean.classes" >
+    <!-- full clean also removes the generated JAR file -->
+    <delete file="${jar.location}" />
+  </target>
+
+  <!-- Targets used by the main GATE build file -->
+  <target name="build" depends="dist" />
+  <target name="test" />
+  <target name="distro.prepare" depends="clean.classes" />
+</project>
+
