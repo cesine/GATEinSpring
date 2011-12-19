@@ -119,7 +119,7 @@ Rule: ApproximateQuantity
 
 Rule: ApproximateQuantityInCollection
 (
-	( (SCOPESHIFTERS)?  (APPROXIMATEQUANTITY)	)?
+	( (SCOPESHIFTERS)?  (APPROXIMATEQUANTITY):quantity	)?
 	( {CollectionNounCluster.value != "UNKNOWN"} ):noun 
 )
 :number -->
