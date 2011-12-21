@@ -33,7 +33,7 @@ Rule: Verb
 	{Token.string == "shall"}|{Token.string == "should"}|
 	{Token.string == "may"}|{Token.string == "might"}	
 ):verb -->
-	:verb.Verb = {string = :deter.Token.string, category = "potential plural verb"}
+	:verb.Verb = {string = :verb.Token.string, category = "potential plural verb"}
 
 Rule: Preposition
 (
